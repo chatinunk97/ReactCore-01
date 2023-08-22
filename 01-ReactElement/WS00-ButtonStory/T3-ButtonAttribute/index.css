@@ -28,3 +28,7 @@ body {
     transform: scale(0.97);
     box-shadow: 7px 5px 56px -10px #c3d900;
 }
+
+.bigFont{
+    font-size: 2rem;
+}

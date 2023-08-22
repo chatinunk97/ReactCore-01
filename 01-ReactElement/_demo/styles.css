@@ -7,3 +7,23 @@
 html {
     font-size: 62.5%; // root 16px * 0.625 == 10px
 }
+
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.bigfont{
+    font-size: 2rem;
+}
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid black;
+    padding: 10px;
+}
+th{
+    font-size: 2rem;
+}
