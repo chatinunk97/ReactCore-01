@@ -1,7 +1,7 @@
 function Car(props) {
-    console.log(props.brand); // *
-    console.log(props.price); // **
-    console.log(props.color); // ***
+    console.log(props.brand); // * 'Honda'
+    console.log(props.price); // ** '100000'
+    console.log(props.color); // *** undefined
     return <div>Car</div>;
 }
 

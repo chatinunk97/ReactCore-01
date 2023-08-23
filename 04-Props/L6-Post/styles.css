@@ -10,9 +10,11 @@ html {
 
 body {
     font-size: 4rem;
+    padding-inline: 50px;
 }
 
 h1 {
+    flex-basis: 100%;
     font-size: 4rem;
     text-align: center;
     margin: 3rem 0;
@@ -35,3 +37,55 @@ h1 {
 .text-blue {
     color: blue;
 }
+.postList{
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.post{
+    flex-grow: 1 0;
+    max-width: 1000px;
+    min-width: 535px;
+    flex-basis: 100%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 8px 4px 4px grey;
+    border: 0.5px solid grey;
+    display: flex;
+    gap: 20px;
+    /* flex-direction: column; */
+    background-color: rgb(255, 255, 255);
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.left > p {
+    font-size: 2rem;
+}
+.post:active{
+    position: relative;
+    top: 4px;
+    left:4px
+}
+img{
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 5px 4px 4px grey;
+}
+
+@media only screen and (max-width: 870px) {
+    body {
+      background-color: lightblue;
+    }
+    .post{
+        flex-direction: column;
+    }
+  }

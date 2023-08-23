@@ -14,3 +14,30 @@ body {
     height: 100vh;
     font-family: 'poppins', sans-serif;
 }
+
+.buttonPannel{
+    /* background-color: red; */
+    width: 500px;
+    margin: 50px;
+    display: flex;
+    gap: 10px;
+}
+.pageButton{
+    text-align: center;
+    width: 50px;
+    padding: 10px;
+    padding-block: 20px;
+    font-size: 3rem;
+    
+    flex-grow: 1;
+    border-radius: 5px;
+    background-color:#F9F1E7 ;
+    color: black;
+}
+.pageButton:hover{
+    background-color:#B88E2F ;
+    color: white;
+}
+.nonNumber{
+    flex-grow: 5;
+}

@@ -14,3 +14,19 @@ body {
     height: 100vh;
     font-family: 'poppins', sans-serif;
 }
+input{
+    /* border-radius: 10px; */
+    border: none;
+    font-size: 5rem;
+    outline: none;
+}
+
+.searchBar{
+    margin: 50px;
+    display: inline-block;
+    border: 3.5px solid grey;
+    border-radius: 5px;
+}
+img{
+    width: 40px;
+}
