@@ -39,13 +39,10 @@ root.render(bmiCalculator)
 
 
 
-
-
 const calBMI = (w, h) => {
-    const newBMI = <h3>Your BMI is {Math.round(w / ((h / 100) ** 2))} </h3>
     const bmiOutput = document.querySelector('.bmiOutput')
     const rootBmi = ReactDOM.createRoot(bmiOutput)
 
-    rootBmi.render(newBMI)
+    rootBmi.render(<h3>Your BMI is {(w / (h ** 2)).toFixed(2)} </h3>)
     return 
 }

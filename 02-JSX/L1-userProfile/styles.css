@@ -33,3 +33,10 @@ img {
     aspect-ratio: 1;
     border-radius: 50%;
 }
+
+.btn{
+    padding:20px;
+    font-size: 2rem;
+    /* width: 200px;
+    height: 200px; */
+}
