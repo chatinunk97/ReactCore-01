@@ -1,16 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+  font-size: 62.5%; // root 16px * 0.625 == 10px
 }
 
 body {
-    height: 100vh;
-    font-family: 'poppins', sans-serif;
+  height: 100vh;
+  width: 80vw;
+  font-family: "poppins", sans-serif;
+}
+
+.container {
+  gap: 20px;
+  width: 100%;
+  /* background-color: wheat; */
+  display: grid;
+  padding: 25px;
+  /* grid-template-rows: 100px 100px; */
+  grid-template-rows: repeat(5, 250px);
+
+  /* Set column width */
+  /* grid-template-columns: 100px 100px 100px 100px; */
+  /* grid-template-columns: repeat(4,100px); */
+  grid-template-columns: repeat(4, 200px);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(234, 230, 230);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.item {
+}
+.cardTop {
+  min-height: 150px;
+  max-height: 150px;
+  flex: 1;
+}
+.cardBot {
+  padding-top: 10px;
+  padding-inline: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.name {
+  overflow-x: scroll;
+  height: 20px;
+}
+.des {
+  height: 50px;
+  overflow: scroll;
+}
+.img {
+  
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  
+
+}
+img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  width: 100%;
+
+
+
 }

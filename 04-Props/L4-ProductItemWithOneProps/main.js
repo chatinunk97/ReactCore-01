@@ -3,17 +3,22 @@ const productDB = [
         productName: 'iPhone',
         productPrice: 24_000,
         productDes: 'Smart Phone',
-    }
+    },
+    {
+        productName: 'HuaWei',
+        productPrice: 18_000,
+        productDes: 'CH Smart Phone',
+    },
 ]
 
 
 const Produce = (prop) => {
-    console.log(prop)
+    console.log(prop.product.a)
     return (
         <>
-            <h1>{`${prop.product[0]}`}</h1>
-            <h2>{`${prop.product[1]}`}</h2>
-            <p>{`${prop.product[2]}`}</p>
+            <h1>{`${prop.product.a.productName}`}</h1>
+            <h2>{`${prop.product.a.productPrice}`}</h2>
+            <p>{`${prop.product.a.productDes}`}</p>
         </>
     )
 }
@@ -21,10 +26,9 @@ const Produce = (prop) => {
 const App = () => {
     return (
         <>
-            <Produce product={[
-                productDB[0].productName,
-                productDB[0].productPrice,
-                productDB[0].productDes]}/>
+            <Produce product={{a : productDB[0]}}/>
+            <Produce product={{a : productDB[1]}}/>
+            <Produce product={{a : productDB[1]}}/>
         </>
     )
 }

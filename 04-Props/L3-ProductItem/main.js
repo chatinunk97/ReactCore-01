@@ -10,9 +10,9 @@ const productDB = [
 const Produce = (prop)=>{
     return (
         <>
-        <h1>{`${prop.name}`}</h1>
-        <h2>{`${prop.price}`}</h2>
-        <p>{`${prop.des}`}</p>
+        <h1>{`Product Name : ${prop.name}`}</h1>
+        <h2>{`Price : ${prop.price}`}</h2>
+        <p>{`Des. : ${prop.des}`}</p>
         </>
     )
 }

@@ -1,4 +1,4 @@
-const ArrayPost = [
+const arrayPost = [
     { id: 1, message: "Have you heard of Joh ?", date: "23 Aug 2023", poster: "ymd" , profilePic : "http://m.gettywallpapers.com/wp-content/uploads/2023/07/Pfp-Boku-no-Kokoro-no-Yabai-Yatsu.jpg"},
     { id: 2, message: "Joe Who ?", date: "24 Aug 2023", poster: "boss", profilePic:"https://thicc-af.mywaifulist.moe/waifus/kyoutarou-ichikawa/ih4skkexhyaeoxUL6YKpU2KvbJRJl5KZBVx2cV2t.jpg?class=thumbnail" },
     { id: 3, message: "JOE MAMA!!!", date: "24 Aug 2023", poster: "ymd" , profilePic : "https://i.pinimg.com/1200x/26/98/96/2698969af0bda55ea1ab09435e08182f.jpg" },
@@ -24,10 +24,7 @@ const App = () => {
     return (
         <div className="postList">
             <h1>Post List</h1>
-            <ShowPost post={ArrayPost[0]} />
-            <ShowPost post={ArrayPost[1]} />
-            <ShowPost post={ArrayPost[2]} />
-            <ShowPost post={ArrayPost[3]} />
+            {arrayPost.map((item)=><ShowPost post={item}/>)}
         </div>
     )
 }

@@ -14,9 +14,7 @@ const App = () => {
     return (
         <>
             <h1>My Friend List</h1>
-            <FriendList friend={friendList[0]} />
-            <FriendList friend={friendList[1]} />
-            <FriendList friend={friendList[2]} />
+        {friendList.map((item)=><FriendList friend={item}/>)}
         </>
     )
 }
